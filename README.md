@@ -10,9 +10,9 @@
 
 Pour les deux images :
 
-- L'image du stock **initial**, l'ancien inventaire **n-1** | nommé par **image_initial**
+- L'image du stock **initiale**, l'ancien inventaire **n-1** | nommé par **image_initial**
 
-- L'image du stock **final**, Inventaire actuel **n** | nommé par **image_final**
+- L'image du stock **finale**, Inventaire actuel **n** | nommé par **image_final**
 
 ---
 
@@ -20,17 +20,18 @@ Pour les deux images :
 - Recherche du stock à une date pour avoir le **nombre total de vehicule du stock**
 - Recherche des retraitements avec pour chaque le **_nom_**, le **_nombre d'entité_** ainsi que le **_prix total des toutes les entités_**
 
-  - Les **FNP** (Factures Non Parvenues) en filtrant les véhicules rentrée dans le parc par
-  - la **_date de facture d'achats_** **>** à la **_date du stock_** **&&** **_véhicule présent physiquement_**
-  - la **_date de facture d'achats_** **=== null** à la date du stock **&&** **_véhicule présent physiquement_**
-  - Les **CCA** en filtrant les véhicules par la date de **_facture d'achat_** **<** à la **_date du stock_** **&&** **_véhicule non présent physiquement_**
+  - Les **FNP** (Factures Non Parvenues) en filtrant les **_véhicules sur parc_** par :
+    - la **_date de facture d'achats_** **>** à la **_date du stock_**
+    - la **_date de facture d'achats_** **=== null** à la **_date du stock_**
+  - Les **CCA** en filtrant les véhicules **_véhicule hors parc_** par :
+    - la **_date de facture d'achat_** **<** à la **_date du stock_**
 
 ---
 
 Uniquement pour **image_final**
 
-- Recherche des achats avec pour chaque le **code TVA**, le **_nombre d'entité_** ainsi que le **_prix total HT des toutes les entités_** avec comme période la **date de l'image_initial** à la **date de l'image_final**
-- Les ventes avec pour chaque le **code TVA**, le **_nombre d'entité_** ainsi que le **_prix total HT des toutes les entités_** avec comme période **_la date de l'image_initial à la date de l'image_final_** avec comme particularité de prendre **la valeur des ventes en achats HT**
+- Recherche des achats avec pour chaque le **code TVA**, le **_nombre d'entité_** ainsi que le **_prix total HT des toutes les entités_** avec comme période la **date de l'image_initial + 1 jour** à la **date de l'image_final**
+- Les ventes avec pour chaque le **code TVA**, le **_nombre d'entité_** ainsi que le **_prix total HT des toutes les entités_** avec comme période la **date de l'image_initial + 1 jour** à la **date de l'image_final** avec comme particularité de prendre **la valeur des ventes en achats HT**
 
 ---
 
@@ -44,7 +45,6 @@ Pour retirer ces données sur Cardiff nous pouvont remarquer qu'avec seulement d
 **Nous pouvons automatiser ce processus de manière algoritmique.**
 
 Actuellement ches MCAutomobiles ce processus est fait manuellement et entré dans excel pour faire les calculs. Ce processus est à faire à chaque bilan/inventaire. Ce qui représente un grand nombre de manipulations.
-
 
 ## Le calcul à partir de ces données.
 
