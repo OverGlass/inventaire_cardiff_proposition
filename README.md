@@ -41,9 +41,10 @@ Pour retirer ces données sur Cardiff nous pouvont remarquer qu'avec seulement d
 - **Date de l'image_initial**
 - **Date de l'image_final**
 
+**Nous pouvons automatiser ce processus de manière algoritmique.**
+
 Actuellement ches MCAutomobiles ce processus est fait manuellement et entré dans excel pour faire les calculs. Ce processus est à faire à chaque bilan/inventaire. Ce qui représente un grand nombre de manipulations.
 
-**Nous pouvons automatiser ce processus de manière algoritmique.**
 
 ## Le calcul à partir de ces données.
 
