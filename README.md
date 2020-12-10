@@ -18,7 +18,7 @@ Pour les deux images :
 
 - Recherche du stock à une date pour avoir le **prix total du stock**
 - Recherche du stock à une date pour avoir le **nombre total de vehicule du stock**
-- Recherche des retraitements avec pour chaque le **_nom_**, le **_nombre d'entité_** ainsi que le **_prix total des toutes les entités_**
+- Recherche des retraitements avec pour chaque le **_code TVA_**, le **_nombre d'entité_** ainsi que le **_prix total des toutes les entités_**
 
   - Les **FNP** (Factures Non Parvenues) en filtrant les **_véhicules sur parc_** par :
     - la **_date de facture d'achats_** **>** à la **_date du stock_**
