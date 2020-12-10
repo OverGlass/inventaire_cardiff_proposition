@@ -63,7 +63,7 @@ Encore une fois ceci peut totalement être automatisé de manière algoritmique 
 ### Pour plus de clareté
 
 - J'ai codé le calcul (habituellement fait sur Excel) en TypeScript (Javascript Typé) à partir d'une prétendu sorti JSON de cardiff des données des images. Avec comme résultat une sorti en JSON (Pour l'exemple et faire simple, mais une exportation excel avec les formules VBA serai optimal.)
-- Le fichier **Inventaire.ts** contient la class qui permet de faire le calcul.
-- Le fichier **main.ts** execute le code et contient la structure de donnée souhaité pour l'exemple d'une sortie Cardiff
-- Et le fichier **exportInventaire.json** contient le resultat du print/console.log de main.js
-- Le fichier **exportInventaire.pdf** montre comment est présenté l'inventaire dans excel chez MCAutomobiles.
+- Le fichier [Inventaire.ts](https://github.com/OverGlass/inventaire_cardiff_proposition/blob/master/Inventaire.ts) contient la class qui permet de faire le calcul.
+- Le fichier [main.ts](https://github.com/OverGlass/inventaire_cardiff_proposition/blob/master/main.ts) execute le code et contient la structure de donnée souhaité pour l'exemple d'une sortie Cardiff
+- Et le fichier [exportInventaire.json](https://github.com/OverGlass/inventaire_cardiff_proposition/blob/master/exportInventaire.json) contient le resultat du print/console.log de main.js
+- Le fichier [exportInventaire.pdf](https://github.com/OverGlass/inventaire_cardiff_proposition/blob/master/exportInventaire.pdf) montre comment est présenté l'inventaire dans excel chez MCAutomobiles.
